@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Caches and logs
+__pycache__/
+*.log
+
+# Virtual environment
+venv/
+env/
+
+# Database
+db.sqlite3
+
+
+
+# Media files
+/media/
+
+# Django local settings
+settings_local.py
+
+# Development environment
+.env
+
+# Compiled Python files
+*.pyc
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dependency management
+pip-lock.txt

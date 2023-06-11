@@ -1,0 +1,15 @@
+img.profile-circle.brand-image.elevation-3 {left: 0;position: inherit;}
+
+span.brand-text.font-weight-light {
+    padding: 33%;
+}
+.login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-logo img {
+    width: 211px; /* Adjust the width as desired */
+    height: auto; /* Maintain aspect ratio */
+}

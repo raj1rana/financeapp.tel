@@ -1,0 +1,11 @@
+{% extends 'admin/change_list.html' %}
+
+{% block object-tools-items %}
+    {{ block.super }}
+    {% if request.path == "/financeapp_tel/transactions/" %}
+        <div class="custom-button-container">
+            <a href="{% url 'admin:custom_action_1' %}?{{ request.GET.urlencode }}" class="btn btn-primary">Export CSV</a>
+{#            <a href="{% url 'admin:custom_action_2' %}?{{ request.GET.urlencode }}" class="btn btn-primary">Export PDF</a>#}
+        </div>
+    {% endif %}
+{% endblock %}
