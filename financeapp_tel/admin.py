@@ -3,6 +3,8 @@ from financeapp_tel.models import Accounts, Transactions, Loan, User
 from financeapp_tel.transactions_admin import TransactionsAdmin
 from financeapp_tel.user_admin import CustomUserAdmin
 from django.contrib.auth.models import Group
+from financeapp_tel.accounts_admin import AccountsAdmin
+
 from tabulate import tabulate
 
 
@@ -45,8 +47,8 @@ admin.site.register(User, CustomUserAdmin)
 admin.site.unregister(Group)
 admin.site.register(Group, GroupAdmin)
 # admin.site.register(Category)
-admin.site.register(Accounts)
+admin.site.register(Accounts, AccountsAdmin)
 admin.site.register(Transactions, TransactionsAdmin)
 # admin.site.register(Budget)
-admin.site.register(Loan, LoanAdmin)
+# admin.site.register(Loan, LoanAdmin)
 # Register your models here.

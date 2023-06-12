@@ -51,7 +51,7 @@ class TransactionsAdmin(admin.ModelAdmin):
     def delete_button(self, obj):
         delete_url = reverse('admin:financeapp_tel_transactions_delete', args=[obj.pk])
         return format_html('<a class="deletion btn btn-danger" href="{}">Delete</a>', delete_url)
-    delete_button.short_description = 'Delete'
+    delete_button.short_description = 'Actions'
 
     def get_urls(self):
         urls = super().get_urls()

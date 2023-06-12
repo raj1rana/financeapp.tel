@@ -19,7 +19,6 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.admin import site
-from financeapp_tel.views import directory_index_view
 
 
 site.index_template = 'admin/index.html'
@@ -27,7 +26,7 @@ site.index_template = 'admin/index.html'
 
 urlpatterns = [
                   path('', admin.site.urls),
-                  path('static/<path:path>/', directory_index_view),
+                  # path('reports/', reports_view, name='admin_reports'),
 
               ]
 # Serve static files in development mode
